@@ -1,0 +1,10 @@
+var randomBodyParty = ['лицо', 'рука', 'голова', 'нога', 'нос'];
+var randomAdjective = ['вонючка', 'грустный', ' кривая', 'мерзкое'];
+var randomAnimalBodyParts = ['крыло', 'лапа', 'хвост', 'когти'];
+var randomAnimal = ['крыса', 'черипаха', 'кошка', 'птица'];
+var randomBodyParty = randomBodyParty[Math.floor(Math.random() * randomBodyParty.length)];
+var randomAdjective = randomAdjective[Math.floor(Math.random() * randomAdjective.length)];
+var randomAnimalBodyParts = randomAnimalBodyParts[Math.floor(Math.random() * randomAnimalBodyParts.length)];
+var randomAnimal = randomAnimal[Math.floor(Math.random() * randomAnimal.length)];
+var randomInsult = ['У тебя ', randomBodyParty, ' еще более ', randomAdjective, ', чем ', randomAnimalBodyParts, ' у ', randomAnimal + '!!'].join(' ');
+console.log(randomInsult);
